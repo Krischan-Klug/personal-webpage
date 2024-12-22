@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }) {
   //Fix hydration
