@@ -3,7 +3,7 @@ import TextWrapper from "@/components/TextWrapper";
 export default function Inquiry() {
   return (
     <TextWrapper>
-      <h1>Inquiry</h1>
+      <h2>Inquiry</h2>
     </TextWrapper>
   );
 }
