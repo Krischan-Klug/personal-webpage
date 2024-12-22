@@ -6,13 +6,15 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 20vw;
   z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: transparent;
+  backdrop-filter: blur(32px);
+  opacity: 0.98;
   border-bottom: 1px solid black;
   height: 50px;
 
@@ -69,16 +71,22 @@ const BurgerLine = styled.div`
 `;
 
 const DropdownMenu = styled.div`
-  display: ${({ open }) => (open ? "flex" : "none")};
+  display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 20px;
-  left: 20px;
-  top: 60px;
-  border: 1px solid black;
-  border-radius: 12px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 100;
-  background-color: white;
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  max-height: ${({ open }) => (open ? "100vh" : "0")};
+  opacity: ${({ open }) => (open ? 1 : 0)};
+  transition: max-height 1.5s ease, opacity 0.3s ease;
+  margin: 0;
+  padding: 0;
 `;
 
 const BackgroundBlur = styled.div`
@@ -89,6 +97,7 @@ const BackgroundBlur = styled.div`
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
+  transition: opacity 0.3s ease;
   z-index: 99;
 `;
 
