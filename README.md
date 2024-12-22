@@ -1,40 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# My Personal Homepage
 
-## Getting Started
+Welcome to the GitHub repository for my personal homepage! Here, I present myself as a web developer, showcase my projects, and demonstrate how I create tailored solutions for specific requirements.
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I am a passionate web developer focused on modern web technologies, creative approaches, and user-friendly designs. My strength lies in developing custom projects that meet the unique needs of my clients.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Website Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **About Me**: An overview of my professional background, skills, and values.
+- **Project References**: A showcase of my public projects with links to GitHub repositories and demos.
+- **Custom Project Requests**: The ability to request private projects tailored to specific needs.
+- **Contact Options**: Easy ways to get in touch with me.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technologies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+The website is built with the following technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: [React](https://reactjs.org/) with [Next.js](https://nextjs.org/) for modern and high-performance development.
+- **Styling**: CSS Modules, Tailwind CSS, or Styled-Components for sleek and efficient designs (depending on the final implementation).
+- **Backend**: Node.js and Next.js API Routes to handle dynamic content.
 
-## Learn More
+## Projects
 
-To learn more about Next.js, take a look at the following resources:
+On the website, you will find a showcase of my public projects. Each project includes:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- A brief description
+- Its use case
+- The technologies used
+- Links to GitHub repositories and live demos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Custom Projects
 
-## Deploy on Vercel
+I also offer the development of custom projects. If you have a specific idea or need support with a web project, feel free to contact me. I create solutions tailored to your requirements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- **Email**: [info@krischan.io](mailto:info@krischan.io)
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE). You can use, adapt, and develop the code for your purposes.
+
+---
+
+Thank you for your interest in my website! I look forward to exciting projects and new challenges.
