@@ -37,11 +37,3 @@ I also offer the development of custom projects. If you have a specific idea or 
 ## Contact
 
 - **Email**: [info@krischan.io](mailto:info@krischan.io)
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE). You can use, adapt, and develop the code for your purposes.
-
----
-
-Thank you for your interest in my website! I look forward to exciting projects and new challenges.
