@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function App({ Component, pageProps }) {
   //Fix hydration
@@ -13,7 +14,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
+
+      <Footer />
     </>
   );
 }

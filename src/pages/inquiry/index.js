@@ -1,7 +1,9 @@
+import TextWrapper from "@/components/TextWrapper";
+
 export default function Inquiry() {
   return (
-    <>
-      <h1>Inquiry</h1>
-    </>
+    <TextWrapper>
+      <h2>Inquiry</h2>
+    </TextWrapper>
   );
 }

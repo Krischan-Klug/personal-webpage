@@ -1,7 +1,9 @@
+import TextWrapper from "@/components/TextWrapper";
+
 export default function About() {
   return (
-    <>
-      <h1>About</h1>
-    </>
+    <TextWrapper>
+      <h2>About</h2>
+    </TextWrapper>
   );
 }
