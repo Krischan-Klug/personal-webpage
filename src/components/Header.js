@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20vw;
+  padding: 0 25vw;
   z-index: 100;
   position: fixed;
   top: 0;
@@ -118,7 +118,7 @@ export default function Header() {
     <>
       <StyledHeader>
         <Link href="/">
-          <Logo onClick={() => setMenuOpen(false)}>KK Software</Logo>
+          <Logo onClick={() => setMenuOpen(false)}>KK Software © </Logo>
         </Link>
         <MenuWrapper>
           <Link href="/about">
