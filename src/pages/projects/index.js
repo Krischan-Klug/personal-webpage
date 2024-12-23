@@ -1,4 +1,4 @@
-import TextWrapper from "@/components/TextWrapper";
+import TextWrapper from "@/components/ContentWrapper";
 
 export default function Projects() {
   return (

@@ -3,6 +3,7 @@ import styled from "styled-components";
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
+  background-color: transparent;
 `;
 
 export default function Footer() {
