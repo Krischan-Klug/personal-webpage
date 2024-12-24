@@ -1,7 +1,15 @@
-@font-face {
-  font-family: "SFPRO";
-  src: url("/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
-  font-weight: 400; /* Regular */
+:root {
+  --background-color: white;
+  --text-color: black;
+  --link-color: black;
+  --burger-color: black;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: white;
+  --link-color: white;
+  --burger-color: white;
 }
 
 body {
@@ -11,29 +19,18 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-}
-main {
-  flex-grow: 1;
-}
-
-button,
-input,
-textarea {
-  font-family: "SFPRO", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--link-color);
 }
 
 h3 {
   margin-top: 0px;
   margin-bottom: 10px;
-  &:hover {
-    color: gray;
-    scale: 1.02;
-  }
 }
 
 p {

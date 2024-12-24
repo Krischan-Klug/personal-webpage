@@ -67,7 +67,7 @@ const BurgerMenu = styled.div`
 const BurgerLine = styled.div`
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: var(--burger-color);
 `;
 
 const DropdownMenu = styled.div`
