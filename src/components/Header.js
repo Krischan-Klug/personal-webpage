@@ -29,7 +29,7 @@ const Logo = styled.div`
   font-weight: bold;
 
   &:hover {
-    color: gray;
+    color: var(--hover-color);
     scale: 1.02;
   }
 `;
@@ -47,7 +47,7 @@ const StyledLink = styled.p`
   font-size: 20px;
 
   &:hover {
-    color: gray;
+    color: var(--hover-color);
     scale: 1.02;
   }
 `;

@@ -26,7 +26,7 @@ const StyledSlogan = styled.h3`
   margin-bottom: 0px;
   margin-top: 0px;
   &:hover {
-    color: gray;
+    color: var(--hover-color);
     scale: 1.02;
   }
 `;

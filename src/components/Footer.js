@@ -1,6 +1,25 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import useDarkMode from "./useDarkMode";
 
+// Keyframes
+const shake = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+`;
+//Styling
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
@@ -13,6 +32,12 @@ const StyledThemeIcon = styled.p`
   left: 10px;
   bottom: 5px;
   font-size: 30px;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.2;
+    animation: ${shake} 0.5s ease-in-out;
+  }
 `;
 
 export default function Footer() {
