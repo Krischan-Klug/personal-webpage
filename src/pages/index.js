@@ -1,7 +1,8 @@
-import TextWrapper from "../components/ContentWrapper";
+import MainWrapper from "../components/MainWrapper";
 import styled, { keyframes } from "styled-components";
 import languageSymbols from "../utils/languageSymbols";
 import { useEffect, useRef } from "react";
+import ContentWrapper from "../components/ContentWrapper";
 
 // Keyframes
 const wobble = keyframes`
@@ -23,7 +24,7 @@ const StyledWobbleEmoji = styled.span`
 
 const StyledSlogan = styled.h3`
   margin-bottom: 0px;
-  margin-top: 10px;
+  margin-top: 0px;
   &:hover {
     color: gray;
     scale: 1.02;
@@ -31,6 +32,7 @@ const StyledSlogan = styled.h3`
 `;
 
 const StyledH3 = styled.h3`
+  margin-top: 0px;
   margin-bottom: 10px;
   &:hover {
     color: gray;
@@ -41,6 +43,10 @@ const StyledH3 = styled.h3`
 const StyledP = styled.p`
   margin-top: 0px;
   margin-bottom: 10px;
+`;
+
+const StyledUl = styled.ul`
+  padding-left: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -130,51 +136,58 @@ export default function Home() {
 
   return (
     <>
-      <TextWrapper>
-        <StyledH3>Unleashing Creativity Through Code {"</>"}</StyledH3>
-        <StyledP>
-          At the intersection of technology and art, I craft software solutions
-          that inspire, innovate, and elevate experiences. Welcome to my digital
-          studio, where every line of code is a brushstroke, and every project
-          is a masterpiece in the making. As a software developer, I specialize
-          in building unique applications, engaging games, and tailored software
-          for individuals and businesses alike.
-        </StyledP>
-        <StyledH3>What You'll Find Here: 🔎</StyledH3>
-        <ul>
-          <StyledLi>
-            Showcase of Projects: Explore the diverse software and games I've
-            created, each reflecting a blend of technical expertise and artistic
-            vision.
-          </StyledLi>
-          <StyledLi>
-            About Me: Learn more about my journey, my philosophy, and the
-            passion that drives my work.
-          </StyledLi>
-          <StyledLi>
-            Custom Software Solutions: Have an idea? Let’s bring it to life
-            together. I transform your vision into innovative, user-centric
-            applications.
-          </StyledLi>
-        </ul>
-        <div>
-          <StyledSlogan>"Software development is not just coding"</StyledSlogan>
-          <StyledSlogan>
-            "it's an art form." <StyledWobbleEmoji>✒️</StyledWobbleEmoji>
-          </StyledSlogan>
-        </div>
-
-        <ul>
-          <StyledLi>
-            With a focus on elegance, efficiency, and creativity, I strive to
-            create solutions that are as functional as they are beautiful.
-          </StyledLi>
-          <StyledLi>
-            Let’s shape the future together. Dive in and explore the world of
-            possibilities.
-          </StyledLi>
-        </ul>
-      </TextWrapper>
+      <MainWrapper>
+        <ContentWrapper>
+          <StyledH3>Unleashing Creativity Through Code {"</>"}</StyledH3>
+          <StyledP>
+            At the intersection of technology and art, I craft software
+            solutions that inspire, innovate, and elevate experiences. Welcome
+            to my digital studio, where every line of code is a brushstroke, and
+            every project is a masterpiece in the making. As a software
+            developer, I specialize in building unique applications, engaging
+            games, and tailored software for individuals and businesses alike.
+          </StyledP>
+        </ContentWrapper>
+        <ContentWrapper>
+          <StyledH3>What You'll Find Here: 🔎</StyledH3>
+          <StyledUl>
+            <StyledLi>
+              Showcase of Projects: Explore the diverse software and games I've
+              created, each reflecting a blend of technical expertise and
+              artistic vision.
+            </StyledLi>
+            <StyledLi>
+              About Me: Learn more about my journey, my philosophy, and the
+              passion that drives my work.
+            </StyledLi>
+            <StyledLi>
+              Custom Software Solutions: Have an idea? Let’s bring it to life
+              together. I transform your vision into innovative, user-centric
+              applications.
+            </StyledLi>
+          </StyledUl>
+        </ContentWrapper>
+        <ContentWrapper>
+          <div>
+            <StyledSlogan>
+              "Software development is not just coding"
+            </StyledSlogan>
+            <StyledSlogan>
+              "it's an art form." <StyledWobbleEmoji>✒️</StyledWobbleEmoji>
+            </StyledSlogan>
+          </div>
+          <StyledUl>
+            <StyledLi>
+              With a focus on elegance, efficiency, and creativity, I strive to
+              create solutions that are as functional as they are beautiful.
+            </StyledLi>
+            <StyledLi>
+              Let’s shape the future together. Dive in and explore the world of
+              possibilities.
+            </StyledLi>
+          </StyledUl>
+        </ContentWrapper>
+      </MainWrapper>
       <StyledImageSliderContainter ref={sliderRef}>
         {languageSymbols.map((symbol, index) => (
           <StyledImageIcons key={index}>{symbol}</StyledImageIcons>
