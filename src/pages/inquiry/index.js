@@ -1,9 +1,9 @@
-import TextWrapper from "@/components/ContentWrapper";
+import MainWrapper from "@/components/styledComponents/MainWrapper";
 
 export default function Inquiry() {
   return (
-    <TextWrapper>
+    <MainWrapper>
       <h2>Inquiry</h2>
-    </TextWrapper>
+    </MainWrapper>
   );
 }

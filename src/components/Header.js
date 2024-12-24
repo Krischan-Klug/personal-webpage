@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
   background-color: transparent;
   backdrop-filter: blur(32px);
   opacity: 0.98;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid transparent;
   height: 50px;
 
   @media (max-width: 768px) {
@@ -29,7 +29,7 @@ const Logo = styled.div`
   font-weight: bold;
 
   &:hover {
-    color: gray;
+    color: var(--hover-color);
     scale: 1.02;
   }
 `;
@@ -47,7 +47,7 @@ const StyledLink = styled.p`
   font-size: 20px;
 
   &:hover {
-    color: gray;
+    color: var(--hover-color);
     scale: 1.02;
   }
 `;
@@ -67,7 +67,7 @@ const BurgerMenu = styled.div`
 const BurgerLine = styled.div`
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: var(--burger-color);
 `;
 
 const DropdownMenu = styled.div`

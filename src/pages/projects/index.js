@@ -1,9 +1,9 @@
-import TextWrapper from "@/components/ContentWrapper";
+import MainWrapper from "@/components/styledComponents/MainWrapper";
 
 export default function Projects() {
   return (
-    <TextWrapper>
+    <MainWrapper>
       <h2>Projects</h2>
-    </TextWrapper>
+    </MainWrapper>
   );
 }

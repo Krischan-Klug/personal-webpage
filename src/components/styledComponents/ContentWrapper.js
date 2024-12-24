@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 const StyledContentWrapper = styled.div`
-  margin-left: 25vw;
-  margin-right: 25vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 
   @media (max-width: 768px) {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-bottom: 30px;
   }
 `;
 
