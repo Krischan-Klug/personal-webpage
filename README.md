@@ -18,7 +18,7 @@ I am a passionate web developer focused on modern web technologies, creative app
 The website is built with the following technologies:
 
 - **Frontend**: [React](https://reactjs.org/) with [Next.js](https://nextjs.org/) for modern and high-performance development.
-- **Styling**: CSS Modules, Tailwind CSS, or Styled-Components for sleek and efficient designs (depending on the final implementation).
+- **Styling**: Styled-Components for sleek and efficient designs.
 - **Backend**: Node.js and Next.js API Routes to handle dynamic content.
 
 ## Projects
