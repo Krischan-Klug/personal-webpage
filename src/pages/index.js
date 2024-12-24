@@ -57,16 +57,17 @@ const StyledImageSliderContainter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 25vw;
   margin-top: 10px;
   margin-bottom: 50px;
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
+  max-width: 50vw;
 
   @media (max-width: 768px) {
     margin-left: 20vw;
     margin-right: 20vw;
+    max-width: 60vw;
   }
 
   &::-webkit-scrollbar {
@@ -187,12 +188,17 @@ export default function Home() {
             </StyledLi>
           </StyledUl>
         </ContentWrapper>
+        <StyledImageSliderContainter ref={sliderRef}>
+          {languageSymbols.map((symbol, index) => (
+            <StyledImageIcons
+              onClick={() => window.open(symbol.wikiLink)}
+              key={index}
+            >
+              {symbol.name}
+            </StyledImageIcons>
+          ))}
+        </StyledImageSliderContainter>
       </MainWrapper>
-      <StyledImageSliderContainter ref={sliderRef}>
-        {languageSymbols.map((symbol, index) => (
-          <StyledImageIcons key={index}>{symbol}</StyledImageIcons>
-        ))}
-      </StyledImageSliderContainter>
     </>
   );
 }

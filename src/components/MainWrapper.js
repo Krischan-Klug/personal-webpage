@@ -7,7 +7,6 @@ const StyledMainWrapper = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   @media (max-width: 768px) {
     margin-left: 20vw;
     margin-right: 20vw;
