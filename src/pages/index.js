@@ -1,8 +1,8 @@
-import MainWrapper from "../components/MainWrapper";
+import MainWrapper from "../components/styledComponents/MainWrapper";
 import styled, { keyframes } from "styled-components";
 import languageSymbols from "../utils/languageSymbols";
 import { useEffect, useRef } from "react";
-import ContentWrapper from "../components/ContentWrapper";
+import ContentWrapper from "../components/styledComponents/ContentWrapper";
 
 // Keyframes
 const wobble = keyframes`
@@ -29,20 +29,6 @@ const StyledSlogan = styled.h3`
     color: gray;
     scale: 1.02;
   }
-`;
-
-const StyledH3 = styled.h3`
-  margin-top: 0px;
-  margin-bottom: 10px;
-  &:hover {
-    color: gray;
-    scale: 1.02;
-  }
-`;
-
-const StyledP = styled.p`
-  margin-top: 0px;
-  margin-bottom: 10px;
 `;
 
 const StyledUl = styled.ul`
@@ -139,18 +125,19 @@ export default function Home() {
     <>
       <MainWrapper>
         <ContentWrapper>
-          <StyledH3>Unleashing Creativity Through Code {"</>"}</StyledH3>
-          <StyledP>
+          <h3>Unleashing Creativity Through Code {"</>"}</h3>
+          <p>
+            <br />
             At the intersection of technology and art, I craft software
             solutions that inspire, innovate, and elevate experiences. Welcome
             to my digital studio, where every line of code is a brushstroke, and
             every project is a masterpiece in the making. As a software
             developer, I specialize in building unique applications, engaging
             games, and tailored software for individuals and businesses alike.
-          </StyledP>
+          </p>
         </ContentWrapper>
         <ContentWrapper>
-          <StyledH3>What You'll Find Here: 🔎</StyledH3>
+          <h3>What You'll Find Here: 🔎</h3>
           <StyledUl>
             <StyledLi>
               Showcase of Projects: Explore the diverse software and games I've

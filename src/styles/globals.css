@@ -26,3 +26,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  &:hover {
+    color: gray;
+    scale: 1.02;
+  }
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}

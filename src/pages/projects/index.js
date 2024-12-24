@@ -1,4 +1,4 @@
-import MainWrapper from "@/components/MainWrapper";
+import MainWrapper from "@/components/styledComponents/MainWrapper";
 
 export default function Projects() {
   return (

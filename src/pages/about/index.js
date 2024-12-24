@@ -1,5 +1,5 @@
-import MainWrapper from "@/components/MainWrapper";
-import ContentWrapper from "@/components/ContentWrapper";
+import MainWrapper from "@/components/styledComponents/MainWrapper";
+import ContentWrapper from "@/components/styledComponents/ContentWrapper";
 import { useState, useEffect } from "react";
 
 export default function About() {
@@ -24,8 +24,8 @@ export default function About() {
   }, []);
   return (
     <MainWrapper>
-      <h3>About Me</h3>
       <ContentWrapper>
+        <h3>About Me</h3>
         <p>
           Hello! My name is Krischan. I am {age} years old, living in Mömlingen,
           and I’m deeply passionate about software development and game
