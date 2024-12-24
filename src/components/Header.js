@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
   background-color: transparent;
   backdrop-filter: blur(32px);
   opacity: 0.98;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid transparent;
   height: 50px;
 
   @media (max-width: 768px) {

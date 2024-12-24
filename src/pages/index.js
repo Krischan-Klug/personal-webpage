@@ -1,6 +1,7 @@
 import TextWrapper from "../components/ContentWrapper";
 import styled, { keyframes } from "styled-components";
 import languageSymbols from "../utils/languageSymbols";
+import { useEffect, useRef } from "react";
 
 // Keyframes
 const wobble = keyframes`
@@ -63,16 +64,7 @@ const StyledImageSliderContainter = styled.div`
   }
 
   &::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #aaa;
+    height: 0px;
   }
 `;
 
@@ -88,6 +80,54 @@ const StyledImageIcons = styled.p`
 `;
 
 export default function Home() {
+  const sliderRef = useRef(null);
+
+  //Auto scroll
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (!slider) return;
+
+    let scrollDirection = 1;
+    let interval;
+    const buffer = 10;
+
+    const startAutoScroll = () => {
+      interval = setInterval(() => {
+        slider.scrollLeft += scrollDirection * 1;
+
+        if (
+          slider.scrollLeft + slider.offsetWidth + buffer >=
+          slider.scrollWidth
+        ) {
+          scrollDirection = -1;
+        }
+
+        if (slider.scrollLeft <= buffer && scrollDirection < 0) {
+          scrollDirection = 1;
+        }
+      }, 20);
+    };
+
+    const stopAutoScroll = () => {
+      clearInterval(interval);
+    };
+
+    startAutoScroll();
+
+    slider.addEventListener("mouseover", stopAutoScroll);
+    slider.addEventListener("mouseout", startAutoScroll);
+    slider.addEventListener("touchstart", stopAutoScroll);
+    slider.addEventListener("touchend", startAutoScroll);
+
+    return () => {
+      clearInterval(interval);
+      slider.removeEventListener("mouseover", stopAutoScroll);
+      slider.removeEventListener("mouseout", startAutoScroll);
+      slider.removeEventListener("touchstart", stopAutoScroll);
+      slider.removeEventListener("touchend", startAutoScroll);
+    };
+  }, []);
+
   return (
     <>
       <TextWrapper>
@@ -135,7 +175,7 @@ export default function Home() {
           </StyledLi>
         </ul>
       </TextWrapper>
-      <StyledImageSliderContainter>
+      <StyledImageSliderContainter ref={sliderRef}>
         {languageSymbols.map((symbol, index) => (
           <StyledImageIcons key={index}>{symbol}</StyledImageIcons>
         ))}
