@@ -67,6 +67,10 @@ const StyledImageIcons = styled.p`
   margin: 0 2vw;
   cursor: pointer;
 
+  &:hover {
+    scale: 1.02;
+  }
+
   @media (max-width: 768px) {
     font-size: 30px;
   }
